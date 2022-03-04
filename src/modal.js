@@ -93,6 +93,9 @@ export default class extends Controller {
     // Hide the modal
     this.containerTarget.classList.add(this.toggleClass);
 
+    // Remove the src attribute
+    this.containerTarget.removeAttribute("src");
+
     // Remove the background
     if (this.background) { this.background.remove() }
   }
